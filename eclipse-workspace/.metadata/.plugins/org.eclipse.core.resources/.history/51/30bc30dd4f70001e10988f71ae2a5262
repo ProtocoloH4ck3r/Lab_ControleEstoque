@@ -1,0 +1,63 @@
+package aplicação;
+
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Scanner;
+
+import controle.EntradaEstoque;
+import entidades.Componente;
+
+public class Principal {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Menu");
+		int opcao;
+		System.out.println("0- Sair");
+		System.out.println("1- Entrada de componente");
+		System.out.println("2- Saida de componente");
+		System.out.println("3- Lista de emprestimo");
+
+		opcao = sc.nextInt();
+
+		while (opcao != 0) {
+
+			if (opcao == 1) {
+				sc.nextLine();
+				System.out.println("Digite o nome do componente: ");
+				String nome = sc.nextLine();
+				System.out.println("Informe a quantidade: ");
+				int quantidade = sc.nextInt();
+				sc.nextLine();
+				System.out.println("Descrição do componente: ");
+				String descricao = sc.nextLine();
+				EntradaEstoque estoque = new EntradaEstoque();
+				List<Componente> componentes = new LinkedList <Componente>();
+				Componente componente = new Componente();
+				componente.setNome(nome);
+				componente.setQuantidade(quantidade);
+				componente.setDescricao(descricao);
+				componente.setId(0);
+				componentes.add(componente);
+			
+			} else {
+				if (opcao == 2) {
+					sc.nextLine();
+					
+
+				} else {
+					if (opcao == 3) {
+						sc.nextLine();
+					}
+				}
+			}
+
+			System.out.println("0- Sair");
+			System.out.println("1- Entrada de componente");
+			System.out.println("2- Saida de componente");
+			System.out.println("3- Lista de emprestimo");
+
+			opcao = sc.nextInt();
+		}
+		sc.close();
+	}
+}

@@ -1,0 +1,4 @@
+INDEX VERSION 1.134+/home/protocolo/eclipse-workspace/.metadata/.plugins/org.eclipse.jdt.core
+1865797976.index
+2575358557.index
+3190866726.index

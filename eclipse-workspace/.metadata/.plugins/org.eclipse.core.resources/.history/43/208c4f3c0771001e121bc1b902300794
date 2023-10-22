@@ -1,0 +1,26 @@
+package controle;
+
+import java.util.Date;
+import java.util.LinkedList;
+import java.util.List;
+
+import entidades.Componente;
+
+public class EntradaEstoque {
+	private List <Componente> componentes = new LinkedList<Componente>();
+	private String data; 
+	
+	public String getData() {
+		return data;
+	}
+	public void setData(String data) {
+		this.data = data;
+	}
+
+	public List<Componente> getComponentes() {
+		return componentes;
+	}
+	public void setComponentes(List<Componente> componentes) {
+		this.componentes = componentes;
+	} 
+}
